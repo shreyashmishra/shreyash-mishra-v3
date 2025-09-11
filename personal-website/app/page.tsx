@@ -2,7 +2,6 @@ import Typewriter from "../components/Typewriter";
 import Socials from "../components/Socials";
 import Reveal from "../components/Reveal";
 import styles from "./page.module.scss";
-
 export default function Home() {
   return (
     <>
