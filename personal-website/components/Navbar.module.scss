@@ -1,0 +1,28 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: saturate(160%) blur(10px);
+  background: color-mix(in oklab, var(--background) 85%, transparent);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.container {
+  max-width: 72rem;
+  margin-inline: auto;
+  --gutter: clamp(16px, 6vw, 40px);
+  padding-left: max(var(--gutter), env(safe-area-inset-left));
+  padding-right: max(var(--gutter), env(safe-area-inset-right));
+}
+
+.navbar__inner { position: relative; display: flex; align-items: center; justify-content: center; height: var(--nav-h); }
+
+/* Fluid typography and spacing for links */
+.navbar__links { display: flex; position: absolute; left: 50%; transform: translateX(-50%); align-items: center; gap: var(--nav-gap, 2rem); }
+.navbar__links a { 
+  color: var(--foreground); text-decoration: none; 
+  font-weight: 800; letter-spacing: 0.02em;
+  font-size: clamp(1.2rem, 0.8rem + 1.4vw, 1.9rem);
+}
+.navbar__links a:hover { opacity: .85; }
+

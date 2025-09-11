@@ -1,0 +1,33 @@
+/* Reveal animation wrapper */
+.reveal {
+  display: block;
+  will-change: transform, opacity;
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.left {
+  transform: translateX(-28px);
+}
+
+.right {
+  transform: translateX(28px);
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+  transition: transform 600ms cubic-bezier(.2,.8,.2,1), opacity 600ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .left,
+  .right,
+  .visible {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
