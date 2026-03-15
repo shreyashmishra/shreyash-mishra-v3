@@ -3,15 +3,15 @@
   display: block;
   will-change: transform, opacity;
   opacity: 0;
-  transform: translateY(8px);
+  transform: translateY(24px);
 }
 
 .left {
-  transform: translateX(-28px);
+  transform: translateX(-40px);
 }
 
 .right {
-  transform: translateX(28px);
+  transform: translateX(40px);
 }
 
 .visible {

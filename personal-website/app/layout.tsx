@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shreyash Mishra — Portfolio",
-  description: "Aspiring engineer. Projects and notes.",
+  title: "Shreyash Mishra",
+  description: "Math & Computing student at the University of Waterloo. Software developer building full-stack products, internal tools, and AI-powered applications.",
 };
 
 export default function RootLayout({
