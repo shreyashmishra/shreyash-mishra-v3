@@ -30,14 +30,18 @@ const EXPERIENCE = [
   {
     company: "Creospark",
     role: "Software Developer Intern",
-    period: "2026 – Present",
-    location: "Ontario, Canada",
-    bullets: [
-      "Built internal business solutions using TypeScript, SASS, SharePoint Framework (SPFx), and Power Platform.",
-      "Developed automation flows to reduce repetitive manual work across business workflows.",
-      "Improved workflow runtime by 38%, reducing execution time from 120 seconds to 75 seconds.",
-      "Performed validation and quality checks across business data pipelines.",
-    ],
+    period: "Jan. 2026 – Apr. 2026",
+    location: "Toronto, ON",
+    summary:
+      "Built React/TypeScript SharePoint extensions and Azure automation workflows, and shipped a localization pipeline covering 100+ languages that cut translation costs by over 98%.",
+  },
+  {
+    company: "QuickSlate",
+    role: "Software Developer Intern",
+    period: "Aug. 2025 – Oct. 2025",
+    location: "Toronto, ON",
+    summary:
+      "Shipped a full media platform and internal dashboards in 9 weeks using Next.js and PostgreSQL, improving page render time by 40% through lazy loading, CDN caching, and targeted database indexing.",
   },
 ];
 
@@ -191,10 +195,10 @@ export default function Home() {
               <p>
                 Hi, I&apos;m Shreyash Mishra, a Mathematics student at the University of Waterloo
                 pursuing a Minor in Computing. I have a passion for software development and
-                building practical, impactful products. I&apos;ve previously worked on internal
-                tools and automation solutions, helping improve workflows and create more efficient
-                systems. In my free time, I&apos;ve been developing projects of my own, exploring
-                AI, fintech, full-stack development, and software engineering. Take a look!
+                building practical, impactful products. I&apos;ve interned at QuickSlate, where I
+                shipped a media platform from the ground up, and at Creospark, where I built
+                SharePoint extensions and automation workflows. In my free time I build projects
+                of my own, exploring AI, fintech, and full-stack engineering. Take a look!
               </p>
             </div>
           </section>
@@ -219,11 +223,7 @@ export default function Home() {
                         <span>{e.location}</span>
                       </div>
                     </div>
-                    <ul className={styles.timelineBullets}>
-                      {e.bullets.map((b) => (
-                        <li key={b}>{b}</li>
-                      ))}
-                    </ul>
+                    <p className={styles.timelineSummary}>{e.summary}</p>
                   </div>
                 </div>
               ))}

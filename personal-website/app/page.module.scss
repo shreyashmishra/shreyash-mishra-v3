@@ -206,7 +206,6 @@
     color: var(--body);
     line-height: 1.8;
     margin: 0;
-    text-align: center;
   }
 }
 
@@ -298,6 +297,13 @@
       background: var(--muted);
     }
   }
+}
+
+.timelineSummary {
+  font-size: 0.88rem;
+  color: var(--body);
+  line-height: 1.7;
+  margin: 0;
 }
 
 .courseworkLabel {
