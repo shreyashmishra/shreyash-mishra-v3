@@ -41,7 +41,7 @@ const EXPERIENCE = [
     period: "Aug. 2025 – Oct. 2025",
     location: "Toronto, ON",
     summary:
-      "Shipped a full media platform and internal dashboards in 9 weeks using Next.js and PostgreSQL, improving page render time by 40% through lazy loading, CDN caching, and targeted database indexing.",
+      "Shipped a full media platform and internal dashboards in 9 weeks using Next.js and PostgreSQL.",
   },
 ];
 
